@@ -1,0 +1,100 @@
+        ******************************
+	*       Program files:       *
+	******************************
+
+	all_functions.py - contains:
+	----------------
+
+		connection to sakila and logs databases;
+
+		execution of SQL queries;
+
+		logging decorators;
+
+		functions for searching by key, genre, year, actor;
+	
+		functions for displaying information about movies, stores, coordinates;
+
+		functions for displaying menus, instructions, reference images.
+
+
+	search_movies.py is the main program startup file with the search_movies() function, in which:
+	----------------
+
+		the menu is displayed;
+
+		functions from all_functions.py are called depending on the user's choice;
+
+		the main loop is implemented.
+
+	pass_to_server.py - contains database connection parameters.
+	-----------------
+
+	MovieSearch.jpg, ER-diag_sakila with columns_final.png, ER-diag_sakila_columns.png - images to output to the user.
+	----------------------------------------------------------------------------------
+
+	help.txt - list of files for program operation, instructions for working with the program.
+	--------
+
+
+
+	
+╔══════════════════════════════════════════════════════════════╗
+║                        USER MANUAL                           ║
+╚══════════════════════════════════════════════════════════════╝
+
+The program is designed to search and analyze movies in the SAKILA database.
+
+┌─────────────────────────────┐
+│         MAIN MENU           │
+└─────────────────────────────┘
+
+1. 🔍 Keyword search
+   - Enter a word or phrase (for example: dog love)
+   - A match will be found for the movie title or description.
+
+2. 🎬 Search by Genre
+   - Select one of the genres (Comedy, Drama, Action, etc.).
+
+3. 📅 Search by Year
+   - Enter the year the movie was released (for example: 2006)
+
+4. 🧑 Search by Actor
+   - Enter the actor's first and last name in uppercase.
+
+5. 💰 Price Categories by Genre
+   - Show movies by rentals and genres
+
+6. 🏆 Top 10 most rented movies
+
+7. 🎭 Top 10 most engaged actors
+
+8. 🕒 Length categories
+
+9. 📚 Last 10 rented movies
+
+10. 📊 Top 3 popular user requests
+
+11. 💬 Instructions on how to use the program
+
+12. 💬 SAKILA database structure (ER-diagrams)
+
+0. ❌ Output
+
+┌─────────────────────────────┐
+│ ADDITIONAL FEATURES │
+└─────────────────────────────┘
+
+✔ After selecting a movie, you can:
+   - Find out the availability of copies in stores
+   - Get detailed information about the store address
+   - Open Google map by store coordinates
+
+✔ All your searches are logged in the database "logs"
+✔ 32 user inputs are cached, which speeds up the execution of queries.
+
+---
+
+Author: Kirill Mikhalishin
+Project: Python + SQL
+
